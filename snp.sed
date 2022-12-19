@@ -1,3 +1,4 @@
 #!/bin/sed -nf 
 
-H;${x;s/^\n//;s/\n/|/g;p}
+H
+${x;s/^\n//;s/\n/|/g;p}

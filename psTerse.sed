@@ -6,6 +6,6 @@
 # TODO: reduce!
 
 /^n.$/{s/n.//;H;x;s/^\n//;s/\n/|/g;P;D}
-/^n/{s/n(.*)/\1/;H;s/.//g;x;s/^\n//;s/\n/|/g;P;D}
+/^n/{H;s/.//g;x;s/^\n//;s/\n/|/g;P;D}
 /^n.$/!{H}
 $p

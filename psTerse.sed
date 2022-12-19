@@ -4,8 +4,9 @@
 
 # <2022-12-18> Works!
 # TODO: reduce!
+#   - z replaces 's/.//g'; but is gnu specific
 
 /^n.$/{s/n.//;H;x;s/^\n//;s/\n/|/g;P;D}
-/^n/{H;s/.//g;x;s/^\n//;s/\n/|/g;P;D}
+/^n/{H;z;x;s/^\n//;s/\n/|/g;P;D}
 /^n.$/!{H}
 $p
